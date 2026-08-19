@@ -1,0 +1,30 @@
+# --- Secrets ---
+.env
+*.env
+!.env.example
+
+# --- Python / FastAPI backend ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+venv/
+env/
+.venv/
+*.log
+
+# --- Node (if any tooling is added later) ---
+node_modules/
+
+# --- Docker ---
+*.pid
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Generated report artifacts ---
+*.pdf
+page-*.jpg

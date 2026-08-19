@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Buddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="chat-card">
+
+    <!-- Header (chat opens directly, no separate host/landing page) -->
+    <header class="chat-header">
+      <div class="header-left">
+        <div class="logo-badge">🧠</div>
+        <div class="header-text">
+          <h1>Study Buddy</h1>
+          <span class="status"><i class="dot"></i> Online &middot; ready to help</span>
+        </div>
+      </div>
+      <button class="icon-btn" id="resetBtn" title="Start a new conversation">↺</button>
+    </header>
+
+    <!-- Messages -->
+    <main class="messages" id="messages">
+      <div class="msg bot">
+        <div class="avatar bot-avatar">🎓</div>
+        <div class="bubble">
+          Hey! I'm Study Buddy 👋 Tell me a subject or paste a question,
+          and I'll help you break it down, quiz you, or explain it a
+          different way.
+        </div>
+      </div>
+    </main>
+
+    <!-- Typing indicator (hidden by default) -->
+    <div class="typing-row" id="typingRow" hidden>
+      <div class="avatar bot-avatar">🎓</div>
+      <div class="bubble typing-bubble">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <!-- Composer -->
+    <form class="composer" id="composerForm">
+      <button type="button" class="icon-btn ghost" title="Quick prompts" id="quickBtn">⚡</button>
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Ask about any topic, assignment or concept..."
+        autocomplete="off"
+        maxlength="2000"
+      />
+      <button type="button" class="icon-btn ghost" title="Attach file (coming soon)" disabled>📎</button>
+      <button type="submit" class="send-btn" id="sendBtn" title="Send">➤</button>
+    </form>
+
+    <!-- Quick prompt chips -->
+    <div class="chips" id="chips" hidden>
+      <button class="chip" data-prompt="Explain this topic like I'm a beginner:">Explain simply</button>
+      <button class="chip" data-prompt="Quiz me with 3 questions on:">Quiz me</button>
+      <button class="chip" data-prompt="Give me a step-by-step study plan for:">Study plan</button>
+      <button class="chip" data-prompt="Summarise the key points of:">Summarise</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
