@@ -2,7 +2,7 @@
 // Talks to the FastAPI backend at /api/chat and keeps the UI in sync
 // with the session-based conversation the server maintains.
 
-const API_BASE = window.STUDY_BUDDY_API_BASE || "http://localhost:8000";
+const API_BASE = window.STUDY_BUDDY_API_BASE || "https://study-buddy-1-0wmr.onrender.com";
 
 const messagesEl = document.getElementById("messages");
 const typingRow = document.getElementById("typingRow");
