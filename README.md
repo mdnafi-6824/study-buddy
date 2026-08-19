@@ -79,7 +79,7 @@ Set these in `backend/.env`:
 | Variable | Description |
 |---|---|
 | `LLM_PROVIDER` | `anthropic` |
-| `ANTHROPIC_API_KEY` | Your Anthropic API key (required) |
+| `ANTHROPIC_API_KEY` | sk-ant-.......4PEieQAA |
 | `MODEL_NAME` | Model id, e.g. `claude-sonnet-4-6` |
 
 ## 4. Design decisions
