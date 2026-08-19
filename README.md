@@ -8,8 +8,8 @@ persistent per-session conversation with Claude.
 
 ## Live demo
 
-- Chat UI: https://study-buddy-2-hu7v.onrender.com
-- Backend health check: https://study-buddy-1-0wmr.onrender.com/api/health
+- Chat UI: https://study-buddy-gwgv.onrender.com
+- Backend health check: https://study-buddy-1-8dry.onrender.com/api/health
 
 ## Features
 
@@ -79,7 +79,7 @@ Set these in `backend/.env`:
 | Variable | Description |
 |---|---|
 | `LLM_PROVIDER` | `anthropic` |
-| `ANTHROPIC_API_KEY` | sk-ant-.......4PEieQAA |
+| `ANTHROPIC_API_KEY` | Your Anthropic API key (required) |
 | `MODEL_NAME` | Model id, e.g. `claude-sonnet-4-6` |
 
 ## 4. Design decisions
